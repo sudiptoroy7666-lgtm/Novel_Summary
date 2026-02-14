@@ -4,6 +4,8 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
+
+
 android {
     namespace = "com.example.novel_summary"
     compileSdk = 36
@@ -16,6 +18,43 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // API Keys
+        val groqApiKeyPrimary = project.findProperty("GROQ_API_KEY_PRIMARY") as? String ?: ""
+        val groqApiKeyFallback = project.findProperty("GROQ_API_KEY_FALLBACK") as? String ?: ""
+
+        buildConfigField("String", "GROQ_API_KEY_PRIMARY", "\"$groqApiKeyPrimary\"")
+        buildConfigField("String", "GROQ_API_KEY_FALLBACK", "\"$groqApiKeyFallback\"")
+
+
+
+        // Model names per key
+        buildConfigField("String", "GROQ_MODEL_PRIMARY", "\"llama-3.3-70b-versatile\"")
+        buildConfigField("String", "GROQ_MODEL_FALLBACK", "\"llama-3.1-8b-instant\"")
+
+
+        // API endpoints
+        buildConfigField("String", "GROQ_BASE_URL", "\"https://api.groq.com/openai/v1/\"")
+
+
+
+
+        // build.gradle.kts - CORRECT VALUES
+        buildConfigField("int", "MAX_CONTENT_CEREBRAS", "240000")  // ~60K tokens (safe margin)
+        buildConfigField("int", "MAX_CONTENT_PRIMARY", "450000")   // ~112K tokens (safe margin)
+        buildConfigField("int", "MAX_CONTENT_FALLBACK", "450000")  // ~112K tokens (safe margin)
+
+
+                // Cerebras Configuration (ultra-fast inference)
+                val cerebrasApiKey = project.findProperty("CEREBRAS_API_KEY") as? String ?: ""
+                buildConfigField("String", "CEREBRAS_API_KEY", "\"$cerebrasApiKey\"")
+                buildConfigField("String", "CEREBRAS_BASE_URL", "\"https://api.cerebras.ai/v1/\"")
+                buildConfigField("String", "CEREBRAS_MODEL", "\"llama-3.3-70b\"")
+
+
+        
+
+
     }
 
     buildTypes {
@@ -51,6 +90,7 @@ dependencies {
     // Activity and Fragment (required for AGP 8.9.1)
     implementation("androidx.activity:activity-ktx:1.12.3")
     implementation("androidx.fragment:fragment-ktx:1.8.5")
+    implementation(libs.androidx.activity)
 
     // Room Database (2026 latest version compatible with AGP 8.9.1)
     val roomVersion = "2.7.1"
@@ -82,4 +122,14 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+
+    // Network dependencies for Groq API
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
+
+    // Gson for JSON parsing
+    implementation("com.google.code.gson:gson:2.10.1")
 }

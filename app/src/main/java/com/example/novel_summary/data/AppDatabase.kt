@@ -39,7 +39,8 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "webnovel_summarizer_database"
                 )
-                    .fallbackToDestructiveMigration()
+                    // Fixed: Use the new overloaded version
+                    .fallbackToDestructiveMigrationOnDowngrade()
                     .build()
                 INSTANCE = instance
                 instance

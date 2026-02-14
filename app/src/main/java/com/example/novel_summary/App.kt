@@ -1,6 +1,5 @@
 package com.example.novel_summary
 
-
 import android.app.Application
 import com.example.novel_summary.data.AppDatabase
 

@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,6 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WebNovelSummarizer">
+        <activity
+            android:name=".ui.ChapterDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VolumeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NovelDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.Activity_Library"
             android:exported="false" />
