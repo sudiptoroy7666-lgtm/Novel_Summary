@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base theme WITHOUT ActionBar - Use this for all activities -->
+    <!-- Glassmorphism theme — translucent panels on dark gradient -->
     <style name="Theme.WebNovelSummarizer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="colorAccent">@color/accent</item>
-        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="colorPrimary">#FF8AB4FF</item>
+        <item name="colorPrimaryDark">#FF0D0D1F</item>
+        <item name="colorAccent">#FFFFD6FF</item>
+        <item name="android:statusBarColor">#CC0D0D1F</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <!-- TextInputLayout hint/stroke in glass style -->
+        <item name="textInputStyle">@style/GlassTextInput</item>
+        <!-- Popup menus dark glass -->
+        <item name="popupMenuStyle">@style/PopupMenu.Glass</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Glass</item>
+    </style>
+
+    <!-- TextInput outlined box styled for glass -->
+    <style name="GlassTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#80FFFFFF</item>
+        <item name="boxBackgroundColor">#33FFFFFF</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="android:textColorHint">#66FFFFFF</item>
+    </style>
+
+    <!-- Dark glass popup menu -->
+    <style name="PopupMenu.Glass" parent="Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">#E0111128</item>
+        <item name="android:textColorPrimary">#FFFFFFFF</item>
     </style>
 </resources>

@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <!-- Base solid colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary_container">#E8E5FF</color>
-    <color name="shadow">#1A000000</color>
-    <color name="on_surface">#1A1A1A</color>
-    <!-- Custom Colors -->
-    <color name="primary">#6200EE</color>
-    <color name="primary_dark">#3700B3</color>
-    <color name="accent">#03DAC5</color>
-    <color name="background">#F5F5F5</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
-    <color name="divider">#E0E0E0</color>
-    <color name="error">#B00020</color>
-    <color name="success">#00C853</color>
+
+    <!-- Glassmorphism Palette -->
+
+    <!-- Deep dark gradient base – used as the root background -->
+    <color name="bg_dark_start">#FF0F0F1A</color>
+    <color name="bg_dark_end">#FF1C1C3A</color>
+
+    <!-- Glass panel – frosted white at different opacities -->
+    <color name="glass_fill">#26FFFFFF</color>          <!-- 15% white – cards/panels -->
+    <color name="glass_fill_strong">#40FFFFFF</color>   <!-- 25% white – toolbars/bars -->
+    <color name="glass_fill_medium">#33FFFFFF</color>   <!-- 20% white – buttons/FAB -->
+    <color name="glass_stroke">#60FFFFFF</color>        <!-- 38% white – border highlight -->
+    <color name="glass_stroke_soft">#30FFFFFF</color>   <!-- 19% white – subtle border -->
+
+    <!-- Accent glow colors (subtle color hints inside glass) -->
+    <color name="accent_glow">#208AB4FF</color>         <!-- 13% sky-blue glow -->
+    <color name="accent_glow_warm">#20FFD6FF</color>    <!-- 13% lavender glow -->
+
+    <!-- Text on glass / dark -->
+    <color name="text_primary">#FFFFFFFF</color>        <!-- Pure white – headings -->
+    <color name="text_secondary">#B3FFFFFF</color>      <!-- 70% white – secondary / labels -->
+    <color name="text_hint">#66FFFFFF</color>           <!-- 40% white – hints/placeholders -->
+
+    <!-- Legacy aliases so existing code doesn't break -->
+    <color name="primary">#FF0F0F1A</color>
+    <color name="primary_dark">#FF05050D</color>
+    <color name="accent">#FF8AB4FF</color>
+    <color name="background">#FF0F0F1A</color>
+    <color name="surface">#26FFFFFF</color>
+    <color name="on_surface">#FFFFFFFF</color>
+    <color name="divider">#30FFFFFF</color>
+    <color name="shadow">#40000000</color>
+    <color name="primary_container">#33FFFFFF</color>
+    <color name="error">#FFCF6679</color>
+    <color name="success">#FF81C784</color>
+
+    <!-- Keep these for any legacy references -->
+    <color name="purple_200">#B3FFFFFF</color>
+    <color name="purple_500">#40FFFFFF</color>
+    <color name="purple_700">#26FFFFFF</color>
+    <color name="teal_200">#B3FFFFFF</color>
+    <color name="teal_700">#40FFFFFF</color>
+    <color name="text_secondary_orig">#B3FFFFFF</color>
+    <color name="primary_dark_orig">#FF05050D</color>
 </resources>

@@ -1,89 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Background Circle -->
+    <!-- Background circle with deep navy gradient base -->
     <path
-        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"
-        android:fillColor="#FFFFFF"/>
+        android:fillColor="#0D1B2A"
+        android:pathData="M54,54m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0" />
 
-    <!-- Book Base -->
+    <!-- Subtle inner glow ring -->
     <path
-        android:pathData="M28,38 L54,34 L80,38 L80,74 L54,70 L28,74 Z"
-        android:fillColor="#3498DB"/>
+        android:fillColor="#1A2E45"
+        android:pathData="M54,54m-46,0a46,46 0,1 1,92 0a46,46 0,1 1,-92 0" />
 
-    <!-- Book Spine -->
+    <!-- Open book - left page -->
     <path
-        android:pathData="M54,34 L54,70"
-        android:strokeColor="#2980B9"
-        android:strokeWidth="2"/>
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M22,35 C22,33.3 23.3,32 25,32 L51,32 L51,76 L25,76 C23.3,76 22,74.7 22,73 Z" />
 
-    <!-- Left Page -->
+    <!-- Open book - right page -->
     <path
-        android:pathData="M30,40 L52,37 L52,68 L30,71 Z"
-        android:fillColor="#EBF5FB"/>
+        android:fillColor="#F0F4FF"
+        android:fillAlpha="0.9"
+        android:pathData="M57,32 L83,32 C84.7,32 86,33.3 86,35 L86,73 C86,74.7 84.7,76 83,76 L57,76 Z" />
 
-    <!-- Right Page -->
+    <!-- Book spine center line -->
     <path
-        android:pathData="M56,37 L78,40 L78,71 L56,68 Z"
-        android:fillColor="#D6EAF8"/>
+        android:fillColor="#6B8DD6"
+        android:pathData="M51,30 L57,30 L57,78 L51,78 Z" />
 
-    <!-- Text Lines Left -->
+    <!-- Book top shadow -->
     <path
-        android:pathData="M35,46 L48,44"
-        android:strokeColor="#85C1E9"
-        android:strokeWidth="2"/>
+        android:fillColor="#3D5A8A"
+        android:fillAlpha="0.4"
+        android:pathData="M22,32 L51,32 L51,35 L22,35 Z" />
+    <path
+        android:fillColor="#3D5A8A"
+        android:fillAlpha="0.4"
+        android:pathData="M57,32 L86,32 L86,35 L57,35 Z" />
 
+    <!-- Neural network nodes - left page -->
+    <!-- Center node (large) -->
     <path
-        android:pathData="M35,52 L48,50"
-        android:strokeColor="#85C1E9"
-        android:strokeWidth="2"/>
+        android:fillColor="#4A90E2"
+        android:pathData="M36,54m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
 
+    <!-- Top-left node -->
     <path
-        android:pathData="M35,58 L48,56"
-        android:strokeColor="#85C1E9"
-        android:strokeWidth="2"/>
+        android:fillColor="#7B61FF"
+        android:pathData="M27,43m-3.5,0a3.5,3.5 0,1 1,7 0a3.5,3.5 0,1 1,-7 0" />
 
-    <!-- Text Lines Right -->
+    <!-- Bottom-left node -->
     <path
-        android:pathData="M60,44 L73,46"
-        android:strokeColor="#85C1E9"
-        android:strokeWidth="2"/>
+        android:fillColor="#7B61FF"
+        android:pathData="M27,65m-3.5,0a3.5,3.5 0,1 1,7 0a3.5,3.5 0,1 1,-7 0" />
 
+    <!-- Top-right node -->
     <path
-        android:pathData="M60,50 L73,52"
-        android:strokeColor="#85C1E9"
-        android:strokeWidth="2"/>
+        android:fillColor="#00D4AA"
+        android:pathData="M44,42m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
 
-    <!-- AI Sparkle Main -->
+    <!-- Bottom-right node -->
     <path
-        android:pathData="M54,22 L56,28 L62,30 L56,32 L54,38 L52,32 L46,30 L52,28 Z"
-        android:fillColor="#9B59B6"/>
+        android:fillColor="#00D4AA"
+        android:pathData="M44,66m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
 
-    <!-- Small Sparkles -->
+    <!-- Neural connections - left page -->
     <path
-        android:pathData="M40,28 L41,31 L44,32 L41,33 L40,36 L39,33 L36,32 L39,31 Z"
-        android:fillColor="#8E44AD"/>
+        android:strokeColor="#4A90E2"
+        android:strokeWidth="1.2"
+        android:fillColor="#00000000"
+        android:pathData="M27,43 L31,54" />
+    <path
+        android:strokeColor="#4A90E2"
+        android:strokeWidth="1.2"
+        android:fillColor="#00000000"
+        android:pathData="M27,65 L31,54" />
+    <path
+        android:strokeColor="#4A90E2"
+        android:strokeWidth="1.2"
+        android:fillColor="#00000000"
+        android:pathData="M41,54 L44,42" />
+    <path
+        android:strokeColor="#4A90E2"
+        android:strokeWidth="1.2"
+        android:fillColor="#00000000"
+        android:pathData="M41,54 L44,66" />
+    <path
+        android:strokeColor="#7B61FF"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:pathData="M27,43 L44,42" />
+    <path
+        android:strokeColor="#7B61FF"
+        android:strokeWidth="0.8"
+        android:fillColor="#00000000"
+        android:pathData="M27,65 L44,66" />
 
+    <!-- Right page - text lines (summarized content) -->
     <path
-        android:pathData="M68,28 L69,31 L72,32 L69,33 L68,36 L67,33 L64,32 L67,31 Z"
-        android:fillColor="#8E44AD"/>
+        android:fillColor="#B0C4DE"
+        android:pathData="M62,42 L80,42 L80,44 L62,44 Z" />
+    <path
+        android:fillColor="#B0C4DE"
+        android:pathData="M62,48 L80,48 L80,50 L62,50 Z" />
+    <path
+        android:fillColor="#B0C4DE"
+        android:pathData="M62,54 L76,54 L76,56 L62,56 Z" />
+    <path
+        android:fillColor="#B0C4DE"
+        android:pathData="M62,60 L80,60 L80,62 L62,62 Z" />
+    <path
+        android:fillColor="#B0C4DE"
+        android:pathData="M62,66 L73,66 L73,68 L62,68 Z" />
 
-    <!-- Sparkle Trail Dots -->
+    <!-- AI spark / star on right page -->
     <path
-        android:pathData="M54,30m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
-        android:fillColor="#FFFFFF"/>
+        android:fillColor="#FFD700"
+        android:pathData="M78,60 L79.2,63.6 L83,63.6 L80,65.8 L81.2,69.4 L78,67.2 L74.8,69.4 L76,65.8 L73,63.6 L76.8,63.6 Z" />
 
+    <!-- Glowing dots accent -->
     <path
-        android:pathData="M38,42m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"
-        android:fillColor="#9B59B6"
-        android:fillAlpha="0.6"/>
+        android:fillColor="#00D4AA"
+        android:pathData="M54,26m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M46,23m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#7B61FF"
+        android:pathData="M62,23m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
 
-    <path
-        android:pathData="M70,42m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-1.5,-1.5"
-        android:fillColor="#9B59B6"
-        android:fillAlpha="0.6"/>
 </vector>

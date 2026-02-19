@@ -6,23 +6,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@color/background"
+    android:background="@drawable/gradient_background"
     tools:context=".ui.ActivitySummary">
 
-    <!-- Top App Bar -->
+    <!-- Glass App Bar -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/surface"
-        android:elevation="4dp">
+        android:background="@drawable/glass_toolbar"
+        android:elevation="6dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/primary"
+            android:background="@android:color/transparent"
             android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
 
             <LinearLayout
@@ -77,28 +76,38 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TextView
-                android:id="@+id/tvSummaryTitle"
+            <!-- Glass text panel -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="@string/title_summary"
-                android:textColor="@color/text_primary"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:background="@drawable/glass_panel"
+                android:padding="20dp">
 
-            <TextView
-                android:id="@+id/tvSummaryContent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:lineSpacingExtra="4dp"
-                android:textColor="@color/text_primary"
-                android:textSize="16sp"
-                tools:text="Summary content will appear here..." />
+                <TextView
+                    android:id="@+id/tvSummaryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/title_summary"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSummaryContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    tools:text="Summary content will appear here..." />
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <!-- Loading Indicator -->
+    <!-- Glass Loading Indicator -->
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progressIndicator"
         android:layout_width="wrap_content"
@@ -106,6 +115,6 @@
         android:layout_gravity="center"
         android:indeterminate="true"
         android:visibility="gone"
-        app:indicatorColor="@color/primary" />
+        app:indicatorColor="#FF8AB4FF" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

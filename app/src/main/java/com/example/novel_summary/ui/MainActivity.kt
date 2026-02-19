@@ -704,12 +704,13 @@ class MainActivity : AppCompatActivity() {
                 .header{text-align:center;padding:24px 16px 16px;margin-bottom:24px;}
                 .app-icon {
                     width:72px;height:72px;
-                    background:linear-gradient(135deg,var(--primary),var(--secondary));
+                    background:#0D1B2A;
                     border-radius:24px;display:flex;align-items:center;justify-content:center;
-                    margin:0 auto 16px;box-shadow:0 6px 16px rgba(108,99,255,0.4);
+                    margin:0 auto 16px;box-shadow:0 6px 16px rgba(74,144,226,0.4);
                     animation:float 3s ease-in-out infinite;
+                    overflow:hidden;
                 }
-                .app-icon span{font-size:32px;font-weight:700;}
+                .app-icon span{display:none;}
                 h1 {
                     font-size:28px;font-weight:800;
                     background:linear-gradient(to right,#fff,#a0a0ff);
@@ -752,7 +753,47 @@ class MainActivity : AppCompatActivity() {
         <body>
             <div class="container">
                 <div class="header">
-                    <div class="app-icon"><span>📖</span></div>
+                    <div class="app-icon">
+                        <svg viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                            <circle cx="54" cy="54" r="54" fill="#0D1B2A"/>
+                            <circle cx="54" cy="54" r="46" fill="#1A2E45"/>
+                            <!-- Left page -->
+                            <path d="M22,35 C22,33.3 23.3,32 25,32 L51,32 L51,76 L25,76 C23.3,76 22,74.7 22,73 Z" fill="#FFFFFF"/>
+                            <!-- Right page -->
+                            <path d="M57,32 L83,32 C84.7,32 86,33.3 86,35 L86,73 C86,74.7 84.7,76 83,76 L57,76 Z" fill="#F0F4FF"/>
+                            <!-- Spine -->
+                            <rect x="51" y="30" width="6" height="48" fill="#6B8DD6"/>
+                            <!-- Top shadow bands -->
+                            <rect x="22" y="32" width="29" height="3" fill="#3D5A8A" opacity="0.4"/>
+                            <rect x="57" y="32" width="29" height="3" fill="#3D5A8A" opacity="0.4"/>
+                            <!-- Center neural node -->
+                            <circle cx="36" cy="54" r="5" fill="#4A90E2"/>
+                            <!-- Satellite nodes -->
+                            <circle cx="27" cy="43" r="3.5" fill="#7B61FF"/>
+                            <circle cx="27" cy="65" r="3.5" fill="#7B61FF"/>
+                            <circle cx="44" cy="42" r="3"   fill="#00D4AA"/>
+                            <circle cx="44" cy="66" r="3"   fill="#00D4AA"/>
+                            <!-- Neural connections -->
+                            <line x1="27" y1="43" x2="31" y2="54" stroke="#4A90E2" stroke-width="1.2"/>
+                            <line x1="27" y1="65" x2="31" y2="54" stroke="#4A90E2" stroke-width="1.2"/>
+                            <line x1="41" y1="54" x2="44" y2="42" stroke="#4A90E2" stroke-width="1.2"/>
+                            <line x1="41" y1="54" x2="44" y2="66" stroke="#4A90E2" stroke-width="1.2"/>
+                            <line x1="27" y1="43" x2="44" y2="42" stroke="#7B61FF" stroke-width="0.8"/>
+                            <line x1="27" y1="65" x2="44" y2="66" stroke="#7B61FF" stroke-width="0.8"/>
+                            <!-- Right page text lines -->
+                            <rect x="62" y="42" width="18" height="2" fill="#B0C4DE"/>
+                            <rect x="62" y="48" width="18" height="2" fill="#B0C4DE"/>
+                            <rect x="62" y="54" width="14" height="2" fill="#B0C4DE"/>
+                            <rect x="62" y="60" width="18" height="2" fill="#B0C4DE"/>
+                            <rect x="62" y="66" width="11" height="2" fill="#B0C4DE"/>
+                            <!-- Gold AI star -->
+                            <polygon points="78,60 79.2,63.6 83,63.6 80,65.8 81.2,69.4 78,67.2 74.8,69.4 76,65.8 73,63.6 76.8,63.6" fill="#FFD700"/>
+                            <!-- Top floating dots -->
+                            <circle cx="54" cy="26" r="2"   fill="#00D4AA"/>
+                            <circle cx="46" cy="23" r="1.5" fill="#4A90E2"/>
+                            <circle cx="62" cy="23" r="1.5" fill="#7B61FF"/>
+                        </svg>
+                    </div>
                     <h1>NovelSummarizer</h1>
                     <p class="subtitle">AI-powered summaries for web novels • Read faster • Never lose your place</p>
                 </div>
