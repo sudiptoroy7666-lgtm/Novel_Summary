@@ -171,19 +171,19 @@ The TTS engine splits summaries at sentence boundaries into ≤4,000-character c
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/tree/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum2.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum3.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum4.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum5.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum6.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum1.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum2.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum3.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum4.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum5.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum6.jpg" width="16%"/>
 </p>
 <p align="center">
-  <img src="assets/screenshots/webnovel/sum7.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum8.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum9.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum10.jpg" width="16%"/>
-  <img src="assets/screenshots/webnovel/sum11.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum7.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum8.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum9.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum10.jpg" width="16%"/>
+  <img src="https://github.com/sudiptoroy7666-lgtm/portfolio/blob/fbc009ea41d89c1956497af02910183aa3dd1ecc/assets/screenshots/webnovel/sum11.jpg" width="16%"/>
 </p>
 
 ---
